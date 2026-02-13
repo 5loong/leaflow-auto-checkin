@@ -16,6 +16,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 import requests
 from datetime import datetime
+from selenium.common.exceptions import TimeoutException
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -640,3 +641,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
